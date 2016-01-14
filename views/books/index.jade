@@ -2,4 +2,8 @@ extends ../layout
 
 block content 
   h1 This is my index
+  if books
+    for book in books
+      p= book.title
+      img(src=book['book_image'])
   a(href='/books/show') Go to Show Page
