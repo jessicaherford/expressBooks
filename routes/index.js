@@ -6,7 +6,7 @@ var api_key= process.env.NYT_API_KEY;
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
-  res.redirect('/books/index');
+  res.redirect('/books');
 });
 
 
